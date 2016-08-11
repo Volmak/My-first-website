@@ -1,0 +1,18 @@
+							/* SECOND NAVIGATION SECTION */
+						
+#content nav {
+	background-color: $sectionBgColor;
+
+	ul {
+	    text-align: center;
+		
+		li {
+		     display: inline-block;
+			 padding: 2em 1em;
+		
+		    a:hover {
+		    	color: $activeOverBackgroundColor;
+			}
+		}
+	}
+}

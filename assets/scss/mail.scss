@@ -1,0 +1,27 @@
+							/* "MAIL US" SECTION */
+
+form {
+	div{
+		width: 47.6%;
+		margin: 3em 1% 3em 1%;
+		display: inline-block;
+		border-bottom: 1px solid white;
+		
+			input {
+				width: 100%;
+				background-color: rgba(0,0,0,0);
+				border: none;
+				color: $textColor;
+			}
+			label {
+				margin-bottom: 0.5em;
+				position: absolute;
+		    	cursor: text;
+		    	transition: all $transitionTime;
+			}
+	}
+	div.long{
+		width: 97.7%;
+		margin-top:6em;
+	}
+}

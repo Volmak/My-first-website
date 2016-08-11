@@ -1,0 +1,40 @@
+header {
+	width: 100%;
+	max-width: 1170px;
+	position: fixed;
+	z-index: 99;
+	background-color: $bgColor;
+	height: 4.5em;
+
+	h1 {
+		position: absolute;
+		top: 0.5em;
+		padding-left: 10%;
+	}
+
+	nav {
+		text-align: right;
+		padding-top: 2em;
+		padding-right: 10%;
+		
+		ul {
+			display: inline-block;
+			list-style: none;
+		
+			li {
+				float: left;
+				padding-left: 2em;
+			
+				a {
+					font-weight: bold;
+					color: $headerColor;
+					text-decoration: none;
+					
+					&.active, &:hover {
+						color: $headerActiveColor;
+					}
+				}
+			}
+		}
+	}
+}

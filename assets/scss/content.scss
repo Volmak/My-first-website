@@ -1,0 +1,37 @@
+
+#content {
+	position: relative;
+	top: 4.5em;
+	width: 100%;
+
+	h1{
+		text-align: center;
+	}
+	
+	section{
+		margin-bottom: 3em;
+	
+		>p{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+		}
+	}
+	
+	.brb {
+		display: block;
+		height: 4em;
+		width: 12em;
+		border: 1.5px solid;
+		border-radius: 3em;
+		background-color: rgba(0,0,0,0);
+		margin: 1em auto 0 auto;
+		transition: all $transitionTime;
+	}
+	
+	.brb:hover, #BRBx2 a:hover {
+		background-color: $textColor;
+	}
+}

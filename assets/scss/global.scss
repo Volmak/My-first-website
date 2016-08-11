@@ -1,0 +1,39 @@
+$bgColor: #222222;
+$sectionBgColor: #f73a4c;
+$textColor: white;
+$hoverColor: red;
+$headerColor: grey;
+$headerActiveColor: white;
+$activeOverBackgroundColor: black;
+$transitionTime: 0.5s;
+
+body {
+	color: $textColor;
+	background-color: $bgColor;
+}
+
+a, p, button {
+	color: $textColor;
+	text-decoration: none;
+}
+
+a:hover, button:hover {
+	color: $hoverColor;
+	cursor: pointer;
+}
+
+#container {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+h1 {
+	color: $textColor;
+	font-weight: bold !important;
+	font-size: 2.5em !important;	/*reset.css sometimes suck */
+}
+
+.blurred {
+	opacity: .6;
+}

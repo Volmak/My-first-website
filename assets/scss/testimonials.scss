@@ -1,0 +1,51 @@
+							
+#testimonials {
+	background-color: $sectionBgColor;
+	width: 100%;
+	text-align: center;
+	
+	h1 {
+		padding: 1.3em;
+	}
+	
+	.paddings {
+		padding-bottom: 2em;
+	}
+	
+	div{
+	
+		img{
+			width: 25vw;
+			max-width: 290px;
+			height: 25vw;
+			max-height: 290px;
+			border-radius: 13vw;
+			overflow: hidden;
+			display: inline-block;	
+		}
+		
+		a{
+			padding:10%;
+			vertical-align: 9vw;
+			font-size: 6vw;
+			cursor: pointer;
+			
+			&:hover{
+				color: $activeOverBackgroundColor;
+			}
+		}
+		
+		div {		
+			p{
+				margin: 1em auto;
+				font-size: 1.3em;
+				max-width: 80%;
+			}
+			
+			.blurred {
+				margin: -1em auto 1em auto;
+				font-size: 1.1em;
+			}
+		}
+	}
+}

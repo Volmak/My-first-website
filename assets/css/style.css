@@ -1,0 +1,255 @@
+@CHARSET "UTF-8";
+body {
+  color: white;
+  background-color: #222222; }
+
+a, p, button {
+  color: white;
+  text-decoration: none; }
+
+a:hover, button:hover {
+  color: red;
+  cursor: pointer; }
+
+#container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto; }
+
+h1 {
+  color: white;
+  font-weight: bold !important;
+  font-size: 2.5em !important;
+  /*reset.css sometimes suck */ }
+
+.blurred {
+  opacity: .6; }
+
+/* variables and global level scss */
+header {
+  width: 100%;
+  max-width: 1170px;
+  position: fixed;
+  z-index: 99;
+  background-color: #222222;
+  height: 4.5em; }
+  header h1 {
+    position: absolute;
+    top: 0.5em;
+    padding-left: 10%; }
+  header nav {
+    text-align: right;
+    padding-top: 2em;
+    padding-right: 10%; }
+    header nav ul {
+      display: inline-block;
+      list-style: none; }
+      header nav ul li {
+        float: left;
+        padding-left: 2em; }
+        header nav ul li a {
+          font-weight: bold;
+          color: grey;
+          text-decoration: none; }
+          header nav ul li a.active, header nav ul li a:hover {
+            color: white; }
+
+#content {
+  position: relative;
+  top: 4.5em;
+  width: 100%; }
+  #content h1 {
+    text-align: center; }
+  #content section {
+    margin-bottom: 3em; }
+    #content section > p {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0; }
+  #content .brb {
+    display: block;
+    height: 4em;
+    width: 12em;
+    border: 1.5px solid;
+    border-radius: 3em;
+    background-color: transparent;
+    margin: 1em auto 0 auto;
+    transition: all 0.5s; }
+  #content .brb:hover, #content #BRBx2 a:hover {
+    background-color: white; }
+
+/* common content scss - section & button rules */
+/* SECOND NAVIGATION SECTION */
+#content nav {
+  background-color: #f73a4c; }
+  #content nav ul {
+    text-align: center; }
+    #content nav ul li {
+      display: inline-block;
+      padding: 2em 1em; }
+      #content nav ul li a:hover {
+        color: black; }
+
+/* content(second) navigation section */
+#rotative {
+  position: relative;
+  text-align: center;
+  overflow: hidden; }
+  #rotative > * {
+    position: absolute;
+    width: 100%; }
+  #rotative > img {
+    position: static;
+    height: 56vw;
+    max-height: 650px; }
+  #rotative h1 {
+    top: 30%; }
+  #rotative p {
+    top: 40%;
+    font-size: 1.5em;
+    max-width: 60%; }
+  #rotative #BRBx2 {
+    top: 55%; }
+    #rotative #BRBx2 a {
+      border: 1.5px solid;
+      border-radius: 3em;
+      padding: 1.5em 3em;
+      margin: 0.5em;
+      transition: all 0.5s; }
+  #rotative .controls {
+    bottom: -3.5vw; }
+    #rotative .controls a {
+      padding: 2%;
+      font-size: 4em;
+      vertical-align: 1em;
+      cursor: pointer; }
+    #rotative .controls img {
+      width: 20vw;
+      max-width: 240px;
+      height: 10vw;
+      max-height: 125px;
+      transition: all 0.5s; }
+      #rotative .controls img:hover {
+        transform: translate(0, -3.3vw); }
+
+#radio > p {
+  max-width: 90%;
+  font-size: 1.2em;
+  margin: 2em; }
+
+form ul {
+  display: inline-block; }
+  form ul li {
+    width: 25%;
+    float: left;
+    padding-left: 9%;
+    box-sizing: border-box; }
+
+/* MOVIE COMMON SECTION */
+.movie {
+  display: inline-block;
+  padding: 1.3em 1%;
+  box-sizing: border-box; }
+  .movie p {
+    text-align: center; }
+  .movie .name {
+    padding-top: 1em;
+    font-size: 1.3em;
+    height: 2em;
+    overflow: hidden;
+    display: inline-block; }
+  .movie .imagebox {
+    position: relative;
+    overflow: hidden; }
+    .movie .imagebox > img {
+      width: 100%;
+      z-index: 10;
+      transition: all 0.5s; }
+      .movie .imagebox > img:hover {
+        transform: scale(1.1); }
+
+/* MORE MOVIES SECTION */
+#content .more {
+  width: 24.7%; }
+  #content .more .imagebox {
+    width: 100%;
+    height: 33vw;
+    max-height: 390px; }
+    #content .more .imagebox img {
+      width: 100%;
+      height: 100%; }
+    #content .more .imagebox .buttons {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      z-index: 11;
+      padding: .5em 0 1em 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      text-align: center; }
+      #content .more .imagebox .buttons a {
+        padding: 10%; }
+
+/* POPULAR MOVIES SECTION */
+#content .popular {
+  width: 16.3%; }
+  #content .popular .imagebox {
+    height: 14vw;
+    max-height: 160px; }
+  #content .popular .rating {
+    display: inline-blick;
+    height: 1em; }
+
+#testimonials {
+  background-color: #f73a4c;
+  width: 100%;
+  text-align: center; }
+  #testimonials h1 {
+    padding: 1.3em; }
+  #testimonials .paddings {
+    padding-bottom: 2em; }
+  #testimonials div img {
+    width: 25vw;
+    max-width: 290px;
+    height: 25vw;
+    max-height: 290px;
+    border-radius: 13vw;
+    overflow: hidden;
+    display: inline-block; }
+  #testimonials div a {
+    padding: 10%;
+    vertical-align: 9vw;
+    font-size: 6vw;
+    cursor: pointer; }
+    #testimonials div a:hover {
+      color: black; }
+  #testimonials div div p {
+    margin: 1em auto;
+    font-size: 1.3em;
+    max-width: 80%; }
+  #testimonials div div .blurred {
+    margin: -1em auto 1em auto;
+    font-size: 1.1em; }
+
+/* "MAIL US" SECTION */
+form div {
+  width: 47.6%;
+  margin: 3em 1% 3em 1%;
+  display: inline-block;
+  border-bottom: 1px solid white; }
+  form div input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: white; }
+  form div label {
+    margin-bottom: 0.5em;
+    position: absolute;
+    cursor: text;
+    transition: all 0.5s; }
+form div.long {
+  width: 97.7%;
+  margin-top: 6em; }
+
+/*# sourceMappingURL=style.css.map */

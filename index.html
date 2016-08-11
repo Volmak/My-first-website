@@ -1,0 +1,153 @@
+<!DOCTYPE>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<meta charset="UTF-8">
+	<title>Movie Site Template</title>
+</head>
+
+<body>
+<div id="container">
+
+	<header>
+		<h1>MOVIES</h1>
+		<nav>
+			<ul>
+				<li><a class="active" href="">HOME</a></li>
+				<li><a href="">ABOUT</a></li>
+				<li><a href="">MOST POPULAR</a></li>
+				<li><a href="">NEWS</a></li>
+				<li><a href="">CONTACTS</a></li>
+			</ul>
+		</nav>
+	</header>
+  
+	<div id="content">
+		<nav>
+			<ul>
+				<li><a href="">CINEMA MOVIES</a></li>
+				<li><a href="">TV SERIES</a></li>
+				<li><a href="">CARTOONS</a></li>
+				<li><a href="">ANIME</a></li>
+				<li><a href="">NEW MOVIES</a></li>
+				<li><a href="">HD MOVIES</a></li>
+			</ul>
+		</nav>
+			
+		<section id="rotative">
+				<img src="assets/images/wp5.jpg">
+				<h1>Ex Machina</h1>
+				<p class="blurred"> 
+				&lt;&lt; To erase the line between man and machine is to obscure the line between men and gods &gt;&gt;
+				</p> 
+				<div id='BRBx2'>
+					<a href="" id="learn">LEARN MORE</a>
+					<a href="" id="trailer">WATCH TRAILER</a>
+				</div>
+				<div class="controls">
+					<a>&lt;</a>
+					<img src="assets/images/wp4.jpg"><img src="assets/images/wp5.jpg"><img src="assets/images/wp6.jpg">
+					<a>&gt;</a>
+				</div>
+		</section>
+		
+		<section id='radio'>
+			<h1>Watch your favorite movies online</h1>
+			<p class="blurred">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+				ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+				laboris nisi ut aliquip ex ea commodo consequat. 
+			</p>
+			<form>
+				<ul>
+					<li><label><input type="radio" value ="action" name="style">Action</label><li>
+					<li><label><input type="radio" value ="adventure" name="style">Adventure</label><li>
+					<li><label><input type="radio" value ="animation" name="style">Animation</label><li>
+					<li><label><input type="radio" value ="biography" name="style">Biography</label><li>
+					<li><label><input type="radio" value ="comedy" name="style">Comedy</label><li>
+					<li><label><input type="radio" value ="crime" name="style">Crime</label><li>
+					<li><label><input type="radio" value ="documentary" name="style">Documentary</label><li>
+					<li><label><input type="radio" value ="drama" name="style">Drama</label><li>
+					<li><label><input type="radio" value ="family" name="style">Family</label><li>
+					<li><label><input type="radio" value ="fantasy" name="style">Fantasy</label><li>
+					<li><label><input type="radio" value ="game-show" name="style">game-show</label><li>
+					<li><label><input type="radio" value ="history" name="style">History</label><li>
+					<li><label><input type="radio" value ="horror" name="style">Horror</label><li>
+					<li><label><input type="radio" value ="kids" name="style">Kids</label><li>
+					<li><label><input type="radio" value ="music" name="style">Music</label><li>
+					<li><label><input type="radio" value ="musical" name="style">Musical</label><li>
+					<li><label><input type="radio" value ="mystery" name="style">Mystery</label><li>
+					<li><label><input type="radio" value ="news" name="style">News</label><li>
+					<li><label><input type="radio" value ="romance" name="style">Romance</label><li>
+					<li><label><input type="radio" value ="sci-fi" name="style">Sci-Fi</label><li>
+					<li><label><input type="radio" value ="short" name="style">Short</label><li>
+					<li><label><input type="radio" value ="sport" name="style">Sport</label><li>
+					<li><label><input type="radio" value ="thriller" name="style">Thriller</label><li>
+					<li><label><input type="radio" value ="war" name="style">War</label><li>
+					<li><label><input type="radio" value ="western" name="style">Western</label><li>
+				</ul>
+				<button type='submit' class='brb'>SEARCH</button>
+			</form>
+		</section>
+   
+		<section id='moreMovies'>
+			<h1> More movies </h1>		
+			<button id="addMoreMovies" class='brb' onclick="addMoreMovies()">SHOW MORE</button>
+		</section>
+		
+		<section id='popMovies'>
+			<h1> Popular </h1>			
+			<button id="addPopMovies" onclick="addPopMovies()" class='brb'>SHOW MORE</button>
+			
+		</section>
+
+		<section id="testimonials">
+			<h1>Testimonials</h1>
+			<div class='paddings'>
+				<a class='leftArrow'>&lt;</a>
+				<img src="assets/images/contributer0.jpg">
+				<a class='rightArrow'>&gt;</a>
+				<div>
+					<p> </p>
+					<p class="blurred"> </p>
+					<p> </p>
+				</div>
+			</div>
+		</section>
+		
+		<section id="mail">
+			<form method="post">
+				<h1>Mail us</h1>
+				<div class="blurred">
+					<label for="name">Your Name</label>
+					<input name="name">
+				</div>
+				<div class="blurred">
+					<label for="mail">Your Email</label>
+					<input name="mail">
+				</div>
+				<div class="blurred long">
+					<label for="message">Your Message</label>
+					<input name="message">
+				</div>
+				<button type="submit" class='brb'>SEND</button>	
+			</form>
+		</section>
+
+		<section>
+			<div id="map"></div>
+			
+		</section>
+	</div>
+	
+</div>
+
+<script type="text/javascript" src="assets/js/ajax.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaFksa448ye4wSX2hjOvRMFQTwQ7l3rLM&callback=initMap"
+async defer></script>
+
+</body>
+</html>

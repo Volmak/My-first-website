@@ -1,0 +1,24 @@
+@CHARSET "UTF-8";
+
+@import "global";
+/* variables and global level scss */
+
+@import "header";
+
+@import "content";
+/* common content scss - section & button rules */
+
+@import "sns";
+/* content(second) navigation section */
+
+@import "rotative";
+
+@import "radio";
+
+@import "movie";
+
+@import "testimonials";
+
+@import "mail";
+
+@import "responsiveness"

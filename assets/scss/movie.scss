@@ -1,0 +1,82 @@
+						/* MOVIE COMMON SECTION */
+.movie {
+	display: inline-block;
+	padding: 1.3em 1%;
+	box-sizing: border-box;
+	
+	p {
+		text-align: center;
+	}
+			
+	.name {
+		padding-top: 1em;
+		font-size: 1.3em;
+		height: 2em;
+		overflow: hidden;
+		display: inline-block;
+	}
+	
+	.imagebox {
+		position: relative;
+		overflow: hidden;
+		
+		>img{
+			width: 100%;
+			z-index:10;
+			transition: all $transitionTime;
+			
+			&:hover {
+			  transform: scale(1.1);
+			}
+		}
+	}
+}
+
+
+							/* MORE MOVIES SECTION */
+	
+#content .more {
+	width: 24.7%;
+
+	.imagebox {
+		width: 100%;
+		height: 33vw;
+		max-height: 390px;
+		
+		img {
+			width: 100%;
+			height: 100%;
+		}
+		
+		.buttons{
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+			z-index: 11;
+			padding: .5em 0 1em 0;
+			background-color: rgba(0,0,0,0.7);
+			text-align:center;
+			
+			a{
+				padding: 10%;
+			}
+		}
+	}
+}
+
+							/* POPULAR MOVIES SECTION */
+
+#content .popular {
+	width: 16.3%;
+	
+	.imagebox {
+		height: 14vw;
+		max-height: 160px;
+	}
+	
+	.rating {
+		display: inline-blick;
+		height: 1em;
+	}
+}	
+							
