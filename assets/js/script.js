@@ -1,4 +1,5 @@
 							/* ROTATIVE SECTION */
+
 var rotative = document.getElementById('rotative');
 var rotateResultImage = rotative.children[0];
 var rotateResultName = rotative.children[1];
@@ -10,6 +11,10 @@ var rotateOption1 = controls.children[1];
 var rotateOption2 = controls.children[2];
 var rotateOption3 = controls.children[3];
 var rotateRight = controls.children[4];
+
+var reserve = rotative.children[5];
+var reserveLeft = reserve.children[0];
+var reserveRight = reserve.children[1];
 
 var pointerR = 4;
 
@@ -47,6 +52,24 @@ controls.addEventListener('click', function (e) {
 	}
 }, false);
 
+reserve.addEventListener('click', function (e) {
+	
+	if (e.target == reserveLeft) {	
+		Ajax.request("GET", "server/movies.php", true, function (response) {
+			var movies = JSON.parse(response);
+			clickRotateLeft(movies);
+			changeRotateImage(movies, pointerR);
+		}, {});
+	}
+	
+	if (e.target == reserveRight) {
+		Ajax.request("GET", "server/movies.php", true, function (response) {
+			var movies = JSON.parse(response);
+			clickRotateRight(movies);
+			changeRotateImage(movies, pointerR + 2);
+		}, {});
+	}
+}, false);
 
 function clickRotateLeft(movies) {
 	if (pointerR > 0) {

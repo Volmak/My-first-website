@@ -1,0 +1,204 @@
+@media screen and (max-width: 900px) {
+	body {
+		font-size: 14px !important;
+	}
+	header {
+		text-align: center;
+		height: 4.5em;
+	}
+	header h1 {
+		width: 100%;
+		padding-left: 0;
+		top:0.3;
+	}
+	header nav {
+		padding-top: 3em;
+		text-align: center;
+		padding-right: 0;
+	}
+}
+
+
+@media screen and (max-width: 780px) {
+	body {
+		font-size: 13px !important;
+	}
+	#content {
+		.more {
+			width: 33%;
+		
+			.imagebox {
+				height: 44vw;
+			}
+			.buttons{
+				font-size: 1.1em;
+			}
+		}
+		.popular {
+			width: 25%;
+			
+			.imagebox {
+				height: 21vw;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 680px) {
+	body {
+		font-size: 12px !important;
+	}
+	
+	#content nav ul li{
+		font-size:1.6em;
+		width: 30%;
+		padding: 1em 0;
+	}
+	#content form ul li {
+		width: 33%;
+	}
+	.brb {
+		height: 3.5em !important;
+		width: 10em !important;
+	}
+	.reserve {
+		display: block !important;
+	}
+	.controls {
+		display: none;
+	}
+	form div{
+		width: 100%;
+		margin: 3em 0 !important;
+	}
+}
+
+
+@media screen and (max-width: 520px) {
+	header {
+		height: 8em;
+	
+		h1{
+			top: 2em !important;
+		}
+		span {
+			display: block !important;
+		}
+		#search{
+			display:block;
+		}
+		nav{
+			text-align: left !important;
+			padding-top: 0.5em;
+			padding-left: 0.5em !important;
+			background-color: darkblue;
+			
+			ul {
+				display: none;
+			}
+			&:active{
+				position: absolute;
+				width: 120px;
+				height: 100vh;
+			
+				ul:target{
+					display:block !important;
+					
+					li {
+						float: none !important;
+						padding: 1em 0.5em !important;
+										
+						&:last-child{
+							display: none !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	#content {
+		nav ul li{
+			width: 100%;
+		}
+		#rotative {
+			h1 {
+				bottom: 72%;
+			}
+			p {
+				bottom: 50%;
+			}
+			#BRBx2 {
+		    	top: 60%;
+		    }
+		    .reserve a {
+				font-size:6em;
+			}
+		}
+		.more {
+			width: 50%;
+		
+			.imagebox {
+				height: 66vw;
+			}
+			.buttons{
+				font-size: 1.3em;
+			}
+		}
+		.popular {
+			width: 33%;
+			
+			.imagebox {
+				height: 28vw;
+			}
+		}
+		#testimonials div{
+			font-size: 1.1em;
+			img {
+				width: 35vw;
+				height: 35vw;
+			}
+			a {
+				vertical-align: 15vw;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 380px) {
+	#rotative{
+		h1 {
+			bottom:65% !important;
+		}
+		p{
+			display: none;
+		}
+		#BRBx2 {
+			top:40% !important;
+			a{
+				display: block;
+			}
+		}
+	}
+	form ul li{
+		width: 50% !important;
+	}
+	.more {
+		width: 100% !important;
+	
+		.imagebox {
+			height: 132vw !important;
+		}
+		.buttons{
+			font-size: 1.4em !important;
+		}
+	}
+	.popular {
+		width: 50% !important;
+		
+		.imagebox {
+			height: 42vw !important;
+		}
+	}
+}

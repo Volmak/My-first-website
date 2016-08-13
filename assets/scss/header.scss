@@ -2,7 +2,7 @@ header {
 	width: 100%;
 	max-width: 1170px;
 	position: fixed;
-	z-index: 99;
+	z-index: 29;
 	background-color: $bgColor;
 	height: 4.5em;
 
@@ -11,13 +11,42 @@ header {
 		top: 0.5em;
 		padding-left: 10%;
 	}
+	
+	span {
+		display: none !important;
+		font-size:2em !important;
+	}
+	
+	#search {
+		position: absolute;
+		top: 2.6em;
+		width: 100%;
+		z-index:30;
+		display: none;
+		
+		input {
+			width: 100%;
+		}
+		label{
+			position: absolute;
+			text-align: right;
+			margin-left: -1em;
+			display: inline-block;
+			z-index:55;
+			color:$activeOverBackgroundColor;
+			font-size: 1.8em;
+			cursor: pointer;
+		}
+	}
 
 	nav {
 		text-align: right;
 		padding-top: 2em;
 		padding-right: 10%;
+		z-index: 40;
 		
 		ul {
+			color: $textColor;
 			display: inline-block;
 			list-style: none;
 		

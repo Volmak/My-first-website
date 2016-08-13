@@ -30,18 +30,40 @@ header {
   width: 100%;
   max-width: 1170px;
   position: fixed;
-  z-index: 99;
+  z-index: 29;
   background-color: #222222;
   height: 4.5em; }
   header h1 {
     position: absolute;
     top: 0.5em;
     padding-left: 10%; }
+  header span {
+    display: none !important;
+    font-size: 2em !important; }
+  header #search {
+    position: absolute;
+    top: 2.6em;
+    width: 100%;
+    z-index: 30;
+    display: none; }
+    header #search input {
+      width: 100%; }
+    header #search label {
+      position: absolute;
+      text-align: right;
+      margin-left: -1em;
+      display: inline-block;
+      z-index: 55;
+      color: black;
+      font-size: 1.8em;
+      cursor: pointer; }
   header nav {
     text-align: right;
     padding-top: 2em;
-    padding-right: 10%; }
+    padding-right: 10%;
+    z-index: 40; }
     header nav ul {
+      color: white;
       display: inline-block;
       list-style: none; }
       header nav ul li {
@@ -105,25 +127,27 @@ header {
     height: 56vw;
     max-height: 650px; }
   #rotative h1 {
-    top: 30%; }
+    bottom: 65%;
+    min-bottom: 7.5em; }
   #rotative p {
-    top: 40%;
+    bottom: 54%;
     font-size: 1.5em;
-    max-width: 60%; }
+    width: 700px;
+    max-width: 90%; }
   #rotative #BRBx2 {
     top: 55%; }
     #rotative #BRBx2 a {
       border: 1.5px solid;
       border-radius: 3em;
-      padding: 1.5em 3em;
+      padding: 2% 3em;
       margin: 0.5em;
       transition: all 0.5s; }
   #rotative .controls {
     bottom: -3.5vw; }
     #rotative .controls a {
       padding: 2%;
-      font-size: 4em;
-      vertical-align: 1em;
+      font-size: 5vw;
+      vertical-align: 4.5vw;
       cursor: pointer; }
     #rotative .controls img {
       width: 20vw;
@@ -133,6 +157,17 @@ header {
       transition: all 0.5s; }
       #rotative .controls img:hover {
         transform: translate(0, -3.3vw); }
+  #rotative .reserve a {
+    font-size: 8em;
+    width: 25%;
+    bottom: 0;
+    position: absolute; }
+    #rotative .reserve a:nth-child(1) {
+      left: 0; }
+    #rotative .reserve a:nth-child(2) {
+      right: 0; }
+  #rotative .reserve {
+    display: none; }
 
 #radio > p {
   max-width: 90%;
@@ -146,6 +181,8 @@ form ul {
     float: left;
     padding-left: 9%;
     box-sizing: border-box; }
+    form ul li:hover {
+      color: red; }
 
 /* MOVIE COMMON SECTION */
 .movie {
@@ -189,7 +226,8 @@ form ul {
       background-color: rgba(0, 0, 0, 0.7);
       text-align: center; }
       #content .more .imagebox .buttons a {
-        padding: 10%; }
+        width: 30%;
+        display: inline-block; }
 
 /* POPULAR MOVIES SECTION */
 #content .popular {
@@ -214,7 +252,7 @@ form ul {
     max-width: 290px;
     height: 25vw;
     max-height: 290px;
-    border-radius: 13vw;
+    border-radius: 100%;
     overflow: hidden;
     display: inline-block; }
   #testimonials div a {
@@ -251,5 +289,141 @@ form div {
 form div.long {
   width: 97.7%;
   margin-top: 6em; }
+
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 14px !important; }
+
+  header {
+    text-align: center;
+    height: 4.5em; }
+
+  header h1 {
+    width: 100%;
+    padding-left: 0;
+    top: 0.3; }
+
+  header nav {
+    padding-top: 3em;
+    text-align: center;
+    padding-right: 0; } }
+@media screen and (max-width: 780px) {
+  body {
+    font-size: 13px !important; }
+
+  #content .more {
+    width: 33%; }
+    #content .more .imagebox {
+      height: 44vw; }
+    #content .more .buttons {
+      font-size: 1.1em; }
+  #content .popular {
+    width: 25%; }
+    #content .popular .imagebox {
+      height: 21vw; } }
+@media screen and (max-width: 680px) {
+  body {
+    font-size: 12px !important; }
+
+  #content nav ul li {
+    font-size: 1.6em;
+    width: 30%;
+    padding: 1em 0; }
+
+  #content form ul li {
+    width: 33%; }
+
+  .brb {
+    height: 3.5em !important;
+    width: 10em !important; }
+
+  .reserve {
+    display: block !important; }
+
+  .controls {
+    display: none; }
+
+  form div {
+    width: 100%;
+    margin: 3em 0 !important; } }
+@media screen and (max-width: 520px) {
+  header {
+    height: 8em; }
+    header h1 {
+      top: 2em !important; }
+    header span {
+      display: block !important; }
+    header #search {
+      display: block; }
+    header nav {
+      text-align: left !important;
+      padding-top: 0.5em;
+      padding-left: 0.5em !important;
+      background-color: darkblue; }
+      header nav ul {
+        display: none; }
+      header nav:active {
+        position: absolute;
+        width: 120px;
+        height: 100vh; }
+        header nav:active ul:target {
+          display: block !important; }
+          header nav:active ul:target li {
+            float: none !important;
+            padding: 1em 0.5em !important; }
+            header nav:active ul:target li:last-child {
+              display: none !important; }
+
+  #content nav ul li {
+    width: 100%; }
+  #content #rotative h1 {
+    bottom: 72%; }
+  #content #rotative p {
+    bottom: 50%; }
+  #content #rotative #BRBx2 {
+    top: 60%; }
+  #content #rotative .reserve a {
+    font-size: 6em; }
+  #content .more {
+    width: 50%; }
+    #content .more .imagebox {
+      height: 66vw; }
+    #content .more .buttons {
+      font-size: 1.3em; }
+  #content .popular {
+    width: 33%; }
+    #content .popular .imagebox {
+      height: 28vw; }
+  #content #testimonials div {
+    font-size: 1.1em; }
+    #content #testimonials div img {
+      width: 35vw;
+      height: 35vw; }
+    #content #testimonials div a {
+      vertical-align: 15vw; } }
+@media screen and (max-width: 380px) {
+  #rotative h1 {
+    bottom: 65% !important; }
+  #rotative p {
+    display: none; }
+  #rotative #BRBx2 {
+    top: 40% !important; }
+    #rotative #BRBx2 a {
+      display: block; }
+
+  form ul li {
+    width: 50% !important; }
+
+  .more {
+    width: 100% !important; }
+    .more .imagebox {
+      height: 132vw !important; }
+    .more .buttons {
+      font-size: 1.4em !important; }
+
+  .popular {
+    width: 50% !important; }
+    .popular .imagebox {
+      height: 42vw !important; } }
 
 /*# sourceMappingURL=style.css.map */
